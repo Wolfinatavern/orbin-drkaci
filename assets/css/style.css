@@ -1,0 +1,1301 @@
+/*
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #fefdfd;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.header {
+  background-color: #00529a;
+}
+.mobile-nav {
+  display: none;
+}
+.navigation {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3.6rem;
+  max-width: 175rem;
+  font-size: 2rem;
+  margin: 0 auto;
+  background-color: #fefdfd;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.logo-img {
+  text-align: left;
+  height: 4rem;
+  flex-basis: 0;
+}
+
+.nav-list ul {
+  display: flex;
+  flex-basis: 0;
+  gap: 5rem;
+  align-items: center;
+}
+
+.nav-items:visited,
+.nav-items:link {
+  color: #00529a;
+}
+
+.nav-items:hover {
+  border-bottom: 2px solid #00529a;
+  transition: boder-bottom 1s ease-in-out;
+}
+
+.contact-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.number:link,
+.number:visited {
+  color: #00529a;
+  font-weight: 400;
+}
+
+.blue-phone {
+  color: #00529a;
+}
+
+.hero-section {
+  background-color: #00529a;
+}
+
+.hero-elements {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+.hero-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 9.6rem;
+  letter-spacing: 0.5rem;
+  line-height: 1.3;
+  text-align: center;
+  color: #fefdfd;
+  margin-top: 9.6rem;
+}
+
+.dr-kaci {
+  margin-top: 4.8rem;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  gap: 17rem;
+  font-size: 20rem;
+  color: #3f7db8;
+}
+
+.ka {
+  display: flex;
+  gap: 20rem;
+}
+
+.a {
+  margin-right: 60px;
+}
+.large--spacing {
+  letter-spacing: 36px;
+}
+.blur {
+  filter: blur(10px);
+}
+.glasses {
+  width: 80%;
+}
+
+.btn-cta:link,
+.btn-cta:visited {
+  padding: 1.6rem 2.4rem;
+  background-color: #fefdfd;
+  color: #00529a;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 600;
+  border-radius: 1.6rem;
+  margin-top: 2.4rem;
+  transition: background-color 0.25s ease-in-out;
+}
+.btn-cta:hover {
+  background-color: #e5e4e4;
+}
+.hero-experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fefdfd;
+  color: #00529a;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2.4rem 18.6rem;
+  border-bottom: 1px solid #00529a3a;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border-radius: 0.8rem 0.8rem 0 0;
+  margin-top: 10rem;
+}
+
+.flex--div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.flex--div span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.services {
+  margin-top: 3.6rem;
+  display: grid;
+  grid-template-rows: 8rem 8rem 1fr;
+  grid-template-columns: 150rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #01224f;
+  grid-column: 1/-1;
+  text-transform: capitalize;
+}
+
+.services-text {
+  font-size: 1.6rem;
+  color: #01224f;
+  grid-column: 1/-1;
+  display: inline-block;
+
+  line-height: 1.5;
+}
+.services-list {
+  padding: 0 2.4rem 0 0.4rem;
+}
+.swipe-zone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+}
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+  padding: 3rem 2.4rem;
+  border-radius: 0.8rem;
+  transition: box-shadow 0.25s ease-in-out;
+  border: 1px solid #00529a21;
+}
+.service-item a {
+  display: inline-block;
+}
+.item-text:link,
+.item-text:visited,
+.item-text {
+  display: inline-block;
+  color: #01224f;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.service-item:hover {
+  box-shadow: 0 0 0 1.5px #00529ab2;
+}
+.circle {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: #00529a;
+  border-radius: 50%;
+}
+.about-kaci {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 116rem 55rem;
+  grid-template-rows: 17rem 9rem 1fr;
+}
+.mobile-about {
+  display: none;
+}
+.about-title {
+  margin-top: 10rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #01224f;
+  grid-column: 1/-1;
+}
+
+.kaci-title {
+  color: #00529a;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about-text {
+  grid-column: 1/-1;
+  color: #01224f;
+  font-size: 1.8rem;
+}
+
+.about-desc {
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.clinique-img {
+  height: 38.6rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+.about-desc-text {
+  color: #01224f;
+  font-size: 1.7rem;
+  text-align: left;
+  word-wrap: break-word;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.about-desc-text p {
+  margin-top: 1.2rem;
+}
+
+.about-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #00529a;
+  gap: 2.4rem;
+  width: 36rem;
+  height: 38.6rem;
+  padding: 4.8em 0;
+}
+
+.aside-logo {
+  width: 50%;
+}
+
+.dr-kaci-name {
+  font-size: 3.6rem;
+  color: #fefdfd;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.cta-aside:link,
+.cta-aside:visited {
+  text-transform: capitalize;
+  padding: 2rem 3.6rem;
+  background-color: #fefdfd;
+  color: #00529a;
+  border-radius: 2.6rem;
+  font-size: 1.6rem;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.cta-aside:hover {
+  background-color: #e5e4e4;
+}
+
+.find-us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+  margin-top: 4.8rem;
+  padding: 0 9.6rem;
+  gap: 2.4rem;
+}
+
+.find-us h3 {
+  color: #01224f;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.find-us div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.find-us-a {
+  color: #01224f;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.find-us i {
+  font-size: 1.6rem;
+}
+
+.section-breaker {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #00529a;
+  padding: 9.6rem 2.6rem;
+  margin-top: 10rem;
+}
+.cta-mobile {
+  display: none;
+}
+.section-breaker img {
+  display: none;
+}
+
+.section-breaker h2 {
+  color: #fefdfd;
+  font-size: 3.6rem;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 30%;
+}
+
+.section-breaker p {
+  color: #fefdfd;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+  font-weight: 400;
+  line-height: 1.6;
+  display: inline-block;
+  width: 21%;
+}
+.mobile-text {
+  display: none;
+}
+.form-mobile {
+  display: none;
+}
+.patients-review {
+  display: grid;
+  grid-template-columns: 60rem 100rem;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.clinic-infos-side {
+  padding: 9.6rem 3rem 0 3rem;
+}
+
+.patients-title {
+  color: #01224f;
+  font-size: 3rem;
+  line-height: 1.4;
+  margin-bottom: 2.6rem;
+  font-weight: 600;
+  max-width: 32rem;
+  text-transform: capitalize;
+}
+
+.patients-title span {
+  color: #00529a;
+}
+
+.patients-text {
+  color: #00529a;
+  font-size: 1.5rem;
+  line-height: 1.55;
+  max-width: 45rem;
+  margin-bottom: 9.6rem;
+}
+
+.working-hours {
+  display: inline-block;
+  padding: 5rem 8rem;
+  background-color: #00529a;
+  color: #fefdfd;
+}
+
+.working-hours h4 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 5.6rem;
+}
+
+.hours {
+  display: flex;
+  justify-content: space-between;
+  gap: 9.6rem;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  border-bottom: #e5e4e431 solid 1px;
+}
+
+.reviews-section {
+  padding: 9.6rem;
+}
+.review {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #00529a;
+  border: #00529a21 solid 1px;
+  border-radius: 0.8rem;
+  padding: 3rem 1.6rem 0rem 1.6rem;
+  margin-bottom: 5.6rem;
+}
+.review span {
+  position: absolute;
+  font-size: 8.6rem;
+  height: 1px;
+  transform: translate(-1.2rem, -4rem);
+  font-style: italic;
+}
+blockquote {
+  display: inline-block;
+}
+.review p {
+  display: inline-block;
+  transform: translate(1.5rem, -2rem);
+  color: #00529a;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.review img {
+  width: 12%;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+
+.review-content {
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #00529a;
+  padding: 9.6rem 10rem;
+}
+
+.form-container {
+  background-color: #fefdfd;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-content: center;
+  row-gap: 8rem;
+  padding: 7rem 9.6rem;
+}
+label {
+  display: block;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+  color: #01224f;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+input {
+  border-radius: 2rem;
+  border: #b5cfef 1px solid;
+  padding: 1.2rem 4.6rem;
+  margin-bottom: 2.4rem;
+  transition: box-shadow 0.25s ease-in-out;
+}
+input:hover,
+input:focus,
+select:focus,
+select:hover,
+textarea:hover,
+textarea:focus {
+  box-shadow: -1px 1px 8px 5px rgba(181, 207, 239, 0.72);
+}
+select {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: #b5cfef 1px solid;
+  font-family: "Poppins", sans-serif;
+  color: #b5cfef;
+  text-transform: capitalize;
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+option:not(:first-of-type) {
+  color: #000;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: #b5cfef;
+}
+.form-item {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/-1;
+  column-gap: 1rem;
+}
+
+.message {
+  grid-column: 1/-1;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  border: #b5cfef 1px solid;
+  border-radius: 2rem;
+  resize: none;
+  padding: 1rem;
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.form-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #01224f;
+  grid-column: 1/-1;
+  text-transform: capitalize;
+}
+
+.form-cta:link,
+.form-cta:visited {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #01224f;
+  text-transform: capitalize;
+  padding: 1rem 3.6rem;
+  background-color: #b5cfef;
+  border-radius: 3rem;
+  transform: translate(0, -4.5rem);
+  transition: background-color 0.25s ease-in-out;
+}
+
+.form-cta:hover {
+  background-color: #a3bad7;
+}
+
+.contact-form-title {
+  padding: 10rem;
+}
+.info-title {
+  color: #e5e4e4;
+  font-size: 4.8rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  max-width: 60rem;
+}
+
+.info-title span {
+  color: #9bbafc;
+  text-transform: capitalize;
+}
+
+.form-title-desc {
+  font-family: "Poppins", sans-serif;
+  color: #fefdfd;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 200;
+}
+
+.find-us-form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  font-size: 1.6rem;
+}
+
+.white-contact {
+  display: flex;
+  gap: 1.6rem;
+  color: #e5e4e4;
+  font-weight: 300;
+}
+
+.white-contact a {
+  color: #e5e4e4;
+}
+.sickness-reviews {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 60rem 100rem;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.review-title {
+  margin-top: 10rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #01224f;
+  grid-column: 1/-1;
+  margin-bottom: 4rem;
+}
+.review-title span {
+  color: #00529a;
+}
+.sick-select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 3rem;
+  border: solid 1px #b5cfef80;
+  border-radius: 0.8rem;
+}
+.sick-select a:link,
+.sick-select a:visited {
+  color: #01224f;
+}
+
+.sick-select a:hover {
+  color: #0068c2;
+  font-weight: 700;
+}
+
+.sick-desc {
+  padding: 4rem 2.5rem;
+  border: 1px solid #b5cfef80;
+  border-radius: 0.8rem;
+  grid-column: 2/-1;
+  grid-row: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  max-width: 90rem;
+  row-gap: 5rem;
+}
+.baloon {
+  width: 70%;
+  clip-path: circle();
+  transform: translate(5rem);
+}
+.sick-details {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2/-1;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: start;
+  gap: 1rem;
+  font-size: 1.4rem;
+  max-width: 50rem;
+  line-height: 1.3;
+  color: #01224f;
+  font-weight: 500;
+}
+.sick-details h2 {
+  font-weight: 600;
+  font-size: 2.6rem;
+  text-transform: capitalize;
+}
+.symp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #01224f;
+  text-transform: capitalize;
+  margin-left: 7rem;
+  gap: 2.5rem;
+}
+.cta-sick {
+  text-transform: capitalize;
+  display: block;
+  color: #00529a;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.9rem 5rem;
+  background-color: #b5cfef;
+  border-radius: 0.8rem;
+  /* max-width: 285px; */
+  max-height: 3rem;
+  justify-self: flex-end;
+}
+
+#div-2 {
+  display: none;
+}
+
+.footer-nav {
+  /* padding: 4rem 0; */
+  background-color: #00529a;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: #fefdfd 1px solid;
+}
+.logo-footer {
+  height: 40%;
+}
+.footer-nav div {
+  margin: 10rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.footer-nav div h3,
+.footer-nav li {
+  margin-bottom: 2rem;
+  color: #fefdfd;
+}
+.mobile-contact {
+  display: none;
+}
+.menu a:link,
+.menu a:visited,
+.blog a:link,
+.blog a:visited,
+.dr-kaci-center a:link,
+.dr-kaci-center a:visited,
+.mobile-contact a:link,
+.mobile-contact a:visited {
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: #fefdfd;
+}
+
+.footer-nav label {
+  color: #fefdfd;
+  margin-bottom: 4rem;
+}
+
+.footer-nav input {
+  display: block;
+}
+
+.footer-cta:link,
+.footer-cta:visited {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 1.5rem 4rem;
+  color: #00529a;
+  background-color: #fefdfd;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 15rem;
+}
+
+.copyright {
+  padding: 8rem 0rem;
+  background-color: #01224f;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 300;
+}
+.social-network a:link,
+.social-network a:visited {
+  color: #fefdfd;
+  margin-left: 4rem;
+  font-size: 2rem;
+}
+
+/* Services */
+
+.hero-services div {
+  background-color: #00529a;
+  background-image: url("/assets/img/eye-kaci-extra-blure.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 5rem;
+  height: 30vh;
+}
+.hero-main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-services-title {
+  color: #fefdfd;
+  display: inline-block;
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.hero-services-title span {
+  text-transform: uppercase;
+}
+.hero-services h3 {
+  color: #fefdfd;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.services-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.service-card {
+  display: flex;
+  padding: 6rem 4rem;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.8rem;
+}
+.service-card img {
+  float: left;
+  width: 550px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 0.8rem;
+}
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-title h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #01224f;
+}
+.card-title span {
+  color: #bbd0fca0;
+  font-size: 5rem;
+  font-weight: 600;
+}
+.service-card p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #01224f;
+  font-weight: 300;
+}
+.service-card a:link,
+.service-card a:visited {
+  color: #00529a;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.detailed-sick {
+  padding: 10rem 30rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  align-items: center;
+}
+.sick-illustration {
+  text-align: center;
+}
+.sick-cta {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 1.5rem 15rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  color: #fefdfd;
+  text-transform: capitalize;
+  background-color: #00529a;
+}
+.sick-img {
+  border-radius: 100%;
+}
+
+.info-sick h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  color: #01224f;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.info-sick span {
+  color: #00529a;
+  text-transform: capitalize;
+}
+
+.info-sick p {
+  color: #01224f;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.info-sick li {
+  color: #01224f;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-top: 0.8rem;
+  padding-left: 1.6rem;
+}
+
+.info-sick h3 {
+  margin-top: 8rem;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: #01224f;
+}
+
+.faq-sick {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 5rem;
+  margin-bottom: 10rem;
+}
+
+.faq-title {
+  color: #01224f;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  grid-column: 1/-1;
+}
+
+.faq-card {
+  max-width: 50rem;
+  min-height: 20rem;
+  border: 1px #00529a80 solid;
+  background-color: #f0f5fc;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+.faq-card:nth-of-type(odd) {
+  justify-self: end;
+}
+.faq-card:nth-of-type(even) {
+  justify-self: start;
+}
+
+.faq-card h3 {
+  color: #01224f;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.faq-card p {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: #01224f;
+  line-height: 1.2;
+}
+.faq-card img {
+  height: 3rem;
+}
+.faq-card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.section-team {
+  position: relative;
+}
+.team-image {
+  height: 70vh;
+  background-image: url(/assets/img/illlustration.png);
+}
+
+.team-desc {
+  display: flex;
+  background-color: #00529a;
+  padding: 2rem;
+  width: 57rem;
+  height: 37.2rem;
+  text-align: left;
+  align-items: center;
+  transform: translate(100rem, 15em);
+}
+
+.team-desc p {
+  color: #f0f5fc;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 6rem 3rem;
+}
+
+.exp-detail h1 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  text-transform: capitalize;
+  color: #01224f;
+  margin-bottom: 2rem;
+}
+
+.exp-detail p {
+  color: #01224f;
+  font-weight: 300;
+  font-size: 1.6rem;
+  max-width: 80rem;
+}
+
+.exp-num {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  color: #01224f;
+  margin-bottom: 3rem;
+}
+
+.exp-num p {
+  font-weight: 500;
+}
+
+.exp-text p {
+  color: #01224f;
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+.overlay {
+  position: relative;
+  height: 100vh;
+  background-image: url(/assets/img/close-up-view-of-contact-lenses-and-its-storage-eq-2021-08-29-22-49-10-utc.png);
+  background-size: cover;
+}
+
+.play-btn {
+  position: absolute;
+  transform: translate(90rem, -45rem);
+}
+
+.play-text {
+  position: absolute;
+  transform: translate(70rem, -35rem);
+  color: #e5e4e4;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.par {
+  transform: translate(69rem, -30rem);
+  max-width: 50rem;
+}
+.welcome-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70rem;
+  height: 30rem;
+  background-image: linear-gradient(0deg, #01224fc7, #01224fc7),
+    url(/assets/img/elhadj.png);
+  background-size: cover;
+  padding: 0 4rem;
+  border-radius: 0.8rem;
+  transform: translate(-15rem, -10rem);
+}
+
+.welcome-title {
+  display: inline-block;
+  color: #e5e4e4;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+.contact-welcome {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.contact-welcome img {
+  width: 14%;
+  clip-path: circle();
+}
+.contact-welcome p {
+  color: #fefdfd;
+}
+.dr-kaci-name-p {
+  font-weight: 600;
+}
+.dr-kaci-func {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+.about-welcome {
+  display: flex;
+  align-items: center;
+  max-height: 15rem;
+  gap: 3rem;
+  padding: 1rem 6rem;
+  color: #01224f;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.why-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem;
+}
+
+.why-us-text {
+  padding: 6rem 4rem;
+}
+
+.why-us-text h1 {
+  color: #01224f;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.why-us-text span {
+  color: #00529a;
+  text-transform: uppercase;
+}
+.why-us-text-p {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  max-width: 40rem;
+  line-height: 1.4;
+  color: #01224f;
+}
+
+.why-us-item {
+  padding: 1rem;
+}
+
+.circle-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-color: #00529a;
+}
+
+.circle-about p {
+  color: #f0f5fc;
+}
+
+.patients-num {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.op-done {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.expertise {
+  background-color: #f3f9fd;
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+}
+.expertise p {
+  font-size: 3rem;
+  max-width: 50rem;
+  color: #01224f;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.about-us-contact {
+  margin: 10rem 0;
+  display: flex;
+  gap: 15rem;
+}
+.about-info {
+  color: #01224f;
+}
+.about-info span {
+  color: #00529a;
+}
+
+.about-info-text {
+  color: #01224f;
+  font-size: 1.8rem;
+  font-weight: 400;
+  max-width: 60rem;
+}
+
+.about-contact-info,
+.about-contact-info a {
+  color: #00529a;
+  font-weight: 600;
+}
+
+.about-container-info {
+  border: 1px solid #dbe6ee;
+}
+
+#welc {
+  display: none;
+}
+
+#cont-title1 {
+  display: none;
+}
